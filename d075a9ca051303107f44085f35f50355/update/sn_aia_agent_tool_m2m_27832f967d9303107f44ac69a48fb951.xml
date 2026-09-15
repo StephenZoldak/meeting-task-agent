@@ -2,27 +2,27 @@
     <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Meeting Intelligence Agent">de50520a051703107f44085f35f5038d</agent>
-        <description>Creates an actionable meeting task record in the custom agent tasks table. Use this tool when a task, owner, or deadline is identified in a meeting transcript to automatically populate the task title, assignee name, due date, and task dependencies.</description>
+        <description>Creates a structured meeting task record. Extracts task title, assignee name, due date, dependencies, and a detailed summary of the action item into the description field</description>
         <display_output>true</display_output>
         <execution_mode>autopilot</execution_mode>
         <inputs>[]</inputs>
         <max_auto_executions>10</max_auto_executions>
-        <name>Meeting Task Tool</name>
+        <name>Create Agent Task Record Tool</name>
         <output_transformation_strategy>none</output_transformation_strategy>
         <run_as/>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-14 18:22:16</sys_created_on>
+        <sys_created_on>2026-09-15 18:56:53</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>aa02d60e051703107f44085f35f503e1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Meeting Task Tool</sys_name>
+        <sys_id>27832f967d9303107f44ac69a48fb951</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Agent Task Record Tool</sys_name>
         <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
-        <sys_update_name>sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1</sys_update_name>
+        <sys_update_name>sn_aia_agent_tool_m2m_27832f967d9303107f44ac69a48fb951</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-14 18:22:16</sys_updated_on>
-        <tool display_value="Meeting Task Tool">22029e8a051703107f44085f35f503fe</tool>
+        <sys_updated_on>2026-09-15 19:37:04</sys_updated_on>
+        <tool display_value="Create Agent Task Record Tool">e7832f967d9303107f44ac69a48fb94d</tool>
     </sn_aia_agent_tool_m2m>
 </record_update>

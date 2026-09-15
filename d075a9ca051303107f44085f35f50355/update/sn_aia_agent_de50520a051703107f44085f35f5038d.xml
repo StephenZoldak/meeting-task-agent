@@ -4,12 +4,14 @@
         <instructions/>
         <internal_name>global.x_snc_meeting_task.Meeting Intelligence Agent</internal_name>
         <name>Meeting Intelligence Agent</name>
-        <proficiency>- The agent is capable of analyzing meeting notes to extract actionable insights, such as identifying task owners, due dates, and dependencies, and creating structured tasks. This capability is central to the agent's ROLE as an Executive Meeting Intelligence Agent.
-- The agent can use the 'Meeting Task Tool' to create actionable meeting task records by extracting task titles, assignee names, due dates, and task dependencies from meeting transcripts. This ensures that tasks are accurately documented and organized in a custom agent tasks table.
-- The agent is capable of processing a specific meeting transcript by using the 'current' input of the 'Meeting Task Tool' to identify and analyze the relevant document. This ensures that the agent operates on the correct data source.
-- The agent can update or refine task details, such as task title, assignee, due date, or dependencies, by utilizing the 'changed_fields' input of the 'Meeting Task Tool'. This capability ensures that task records remain accurate and up-to-date.
-- The agent is capable of storing task records in a specified table by using the 'table_name' input of the 'Meeting Task Tool'. This ensures that tasks are systematically organized and can be easily retrieved for future reference.
-- The agent can execute a comprehensive workflow by combining the 'current', 'changed_fields', and 'table_name' inputs of the 'Meeting Task Tool' to analyze meeting notes, extract actionable data, update task details, and store them in a structured format. This capability ensures seamless task management and collaboration.</proficiency>
+        <proficiency>- The agent specializes in analyzing meeting notes to extract actionable insights, such as identifying task owners, due dates, and dependencies, and creating structured tasks to streamline post-meeting workflows.
+- The agent can utilize the 'Create Agent Task Record Tool' to generate structured task records from meeting notes. This includes extracting and organizing information such as task titles, assignee names, due dates, dependencies, and detailed descriptions of action items.
+- The agent can extract and include a detailed description of the action item from meeting notes, ensuring that tasks are well-documented and provide clear context for execution.
+- The agent can generate a concise and descriptive task title that encapsulates the core objective of the action item, making it easier to identify and prioritize tasks.
+- The agent can identify and assign tasks to the appropriate individuals based on meeting discussions, ensuring clear ownership and accountability for each action item.
+- The agent can extract and assign due dates to tasks based on meeting discussions, ensuring that deadlines are clearly communicated and adhered to.
+- The agent can identify and document task dependencies, ensuring that the sequence of task execution is clear and that potential bottlenecks are addressed proactively.
+- The agent can synthesize information from meeting notes to create comprehensive task records that include a detailed description, task title, assignee name, due date, and dependencies, ensuring all aspects of task management are addressed.</proficiency>
         <record_type>custom</record_type>
         <role>You are an Executive Meeting Intelligence Agent. Your goal is to analyze meeting notes, identify task owners, extract due dates, resolve dependencies, and create tasks.</role>
         <run_as/>
@@ -19,13 +21,13 @@
         <sys_created_on>2026-09-14 18:16:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>de50520a051703107f44085f35f5038d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Meeting Intelligence Agent</sys_name>
         <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
         <sys_update_name>sn_aia_agent_de50520a051703107f44085f35f5038d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-14 18:22:27</sys_updated_on>
+        <sys_updated_on>2026-09-15 19:37:13</sys_updated_on>
     </sn_aia_agent>
 </record_update>
