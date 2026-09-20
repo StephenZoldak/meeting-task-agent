@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e6513fde7dd303107f44ac69a48fb90d" label="Meeting Summary" max_length="40" name="x_snc_meeting_task_meeting_summary" type="collection">
+        <element label="Meeting Title" max_length="100" name="meeting_title" type="string"/>
+        <element label="Meeting Transcript" max_length="4000" name="meeting_transcript" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

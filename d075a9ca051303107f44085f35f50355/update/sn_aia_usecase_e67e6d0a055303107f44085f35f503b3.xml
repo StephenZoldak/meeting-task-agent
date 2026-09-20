@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <base_plan>1. Parse the provided meeting transcript to extract all clear action items, assigned owners, and required due dates.
+2. Identify dependencies between tasks (for example, if one person must complete a prerequisite step before another can begin).
+3. Create a task record in the custom agent tasks table for each extracted action item, mapping the task title, assignee, due date, and dependencies.
+4. Format the final output as a clean, human-readable summary table containing the task title, assignee, due date, priority, and dependencies.</base_plan>
+        <description>Parses meeting transcripts and creates structured task records.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_meeting_task.Meeting Intelligence</internal_name>
+        <name>Meeting Intelligence</name>
+        <record_type>custom</record_type>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-14 15:50:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e67e6d0a055303107f44085f35f503b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meeting Intelligence</sys_name>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name>sn_aia_usecase_e67e6d0a055303107f44085f35f503b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-14 15:50:56</sys_updated_on>
+        <team display_value="Meeting Intelligence">bd6fe14a055303107f44085f35f5032f</team>
+        <version>v1</version>
+    </sn_aia_usecase>
+</record_update>

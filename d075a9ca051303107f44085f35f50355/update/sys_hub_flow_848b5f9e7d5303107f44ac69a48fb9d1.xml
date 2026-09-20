@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3927000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_agent_task_record</internal_name>
+        <label_cache>[{"name":"subflow.description","label":"Input➛description","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f1a2de37-89b8-42db-9d2a-bb40f266b576"}},{"name":"f6c55d81-649e-46fe-87d9-32cdd1c40107.Record","label":"1 - Look Up Record➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f6c55d81-649e-46fe-87d9-32cdd1c40107.Record.sys_id","label":"1 - Look Up Record➛User Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"]}},{"name":"subflow.assignee_name","label":"Input➛assignee_name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"],"cc766731-1f3b-4a17-b555-1f4682ceefb3":["conditions"],"f6c55d81-649e-46fe-87d9-32cdd1c40107":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c2e2f42f-eda2-426f-ab37-2ac2a2295ea7"}},{"name":"subflow.dependencies","label":"Input➛dependencies","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["dependencies"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ac5418df-943e-4613-9230-f38ef50db700"}},{"name":"subflow.due_date","label":"Input➛due_date","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["due_date"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a0a18ed7-36bf-4861-bf0c-7d69fa110731"}},{"name":"subflow.task_title","label":"Input➛task_title","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["task_title"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"062479c5-d94c-4e00-9479-d1b4f75fb149"}}]</label_cache>
+        <master_snapshot>9250a7967d9303107f44ac69a48fb966</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create Agent Task Record</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:21:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>848b5f9e7d5303107f44ac69a48fb9d1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Create Agent Task Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name>sys_hub_flow_848b5f9e7d5303107f44ac69a48fb9d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:11</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=848b5f9e7d5303107f44ac69a48fb9d1^sys_idNOT INc88b5f9e7d5303107f44ac69a48fb9d3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>848b5f9e7d5303107f44ac69a48fb9d1</id>
+        <name>Create Agent Task Record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:21:42</sys_created_on>
+        <sys_id>c88b5f9e7d5303107f44ac69a48fb9d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:21:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c88b5f9e7d5303107f44ac69a48fb9d3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=848b5f9e7d5303107f44ac69a48fb9d1^sys_idNOT IN0f4027967d9303107f44ac69a48fb980,324027967d9303107f44ac69a48fb971,8e7a23927dd303107f44ac69a48fb99c,b64023967d9303107f44ac69a48fb90f,fa4027967d9303107f44ac69a48fb96d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ac5418df-943e-4613-9230-f38ef50db700</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dependencies</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>dependencies</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</model>
+        <model_id>848b5f9e7d5303107f44ac69a48fb9d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>0f4027967d9303107f44ac69a48fb980</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f4027967d9303107f44ac69a48fb980"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0a18ed7-36bf-4861-bf0c-7d69fa110731</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>due_date</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</model>
+        <model_id>848b5f9e7d5303107f44ac69a48fb9d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>324027967d9303107f44ac69a48fb971</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=324027967d9303107f44ac69a48fb971"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f1a2de37-89b8-42db-9d2a-bb40f266b576</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</model>
+        <model_id>848b5f9e7d5303107f44ac69a48fb9d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 19:27:06</sys_created_on>
+        <sys_id>8e7a23927dd303107f44ac69a48fb99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e7a23927dd303107f44ac69a48fb99c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=062479c5-d94c-4e00-9479-d1b4f75fb149</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_title</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>task_title</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</model>
+        <model_id>848b5f9e7d5303107f44ac69a48fb9d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:38</sys_created_on>
+        <sys_id>b64023967d9303107f44ac69a48fb90f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b64023967d9303107f44ac69a48fb90f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2e2f42f-eda2-426f-ab37-2ac2a2295ea7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignee_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assignee_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</model>
+        <model_id>848b5f9e7d5303107f44ac69a48fb9d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>fa4027967d9303107f44ac69a48fb96d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa4027967d9303107f44ac69a48fb96d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=848b5f9e7d5303107f44ac69a48fb9d1^sys_idNOT IN0b4027967d9303107f44ac69a48fb9c0,834027967d9303107f44ac69a48fb9c2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:40</sys_created_on>
+        <sys_id>0b4027967d9303107f44ac69a48fb9c0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:37:57</sys_updated_on>
+        <ui_id>f6c55d81-649e-46fe-87d9-32cdd1c40107</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcFkkNBJttgCbtpVsQlEjFxNKkSlJJHcP/fYeiJAu2YltYB0jQI2eG5JuZ90a0v699RvxLn8yCWTqbjadREAyHQTCZDBMcxvFwksRBjEd+zxd4SSHS4JhTWD5hntu1XmmUa6rARJjOOF59Kz1fnTVZME4UFf7l9x89P8MKzjHguVzvuE4FwnFMOYQ+lEh2gJlVVi9R4XO22+Y277NzSEUslKDn01+GCkIBQ4q5pj1/iQXBRqpVbVEUkzvBt4YFEwZO9G3wL81e4N5pYONSClkl1PnqJSoL5MzpNTb43qg8MbkqQ5OFZAnVrh6Epjjn5qppcwF3mWFSuC0ubbdb8nwpPrty+PUBVT/AAo1ChGY2UYu8TCO9X8jnLxXKORNFTUonlwnm9Qobo1icG4tn7VNOl3AQWuIsY+IRZUo+sWIzYFn2Hzks+imXz3CpZo+ijxMLvA91xf052K8L8zesmM3ibzimoEzKODAEuRZqmauilE8o4bkuHAoL7c7yNz1LwSuOtd5mDiVHP3OL29WhzBi5otktiWKZ+ROOeKJlcptepYXxQQrOtpRLpCDMotANQVjf7c1fn9Zrncc2+T5AgyypY+Nms6+UU7Z0lNHxHCoZXTWTaEusFNSe7bbtgFJQ4dkENQqCjyQpuPz9Kaq7RlwJjgglJAdJRrZ80lIZ5GrZUMq+EDrz/AQIFc/vLDO9ePUaqpLmKaOctH035tax890Y/J7fjXdJcgBEkOseE5yJ4hEAQN+K/eOD1IvDHZ4V9Go8m6wN62RfA9gz0nvprIQT4FRKuIe7vQeHpwViNe8LyuzO+spYCmB4NgEMB+cRwLpOsy5kS82rd5/tZhX/YuPxbjxQsLEh3LQJrNOdYdc7B5t9AQ87KbhJNue5foVzZ34gvqLI3luOgAVsLe9DTr/omZFHara3V1FEmmfM/23zl4xDVaOK9N7gsRke/L0TNx6bLEVL6BzL4E2saALk0AgrilKZC4LK1/CWSLaTKVPalMH7g+YLBf0IT4IwPbOgXhHt1dEdP8TH86hKeZN6VSLlbdqDRLwiEa9OpFvaXYbW6IyP03MPrTlmvOgG/NDJGu2kSkn1yuA60sgDjDhxqp0IKjwrqP8/9tok0Dr+jmD9EL+azz+aEorj0QBPomEYBkEYkCiYRlE4ncTpBEejdKtRhLRIYJrCySlQBY5HFTWqPof786cctt3mzAmgKgZeS/FPHgSDyHgWFbTXq1Adx13Ok1hKTrHYGSgPgPyPefFFqOk6fndD5UP8hZSzh91KO1Nrrd/q2ZCzr4L9zOmNpdiUBoNpSJKLaRRGF6OUTC5mBI8v8CweR0NCk1F6zpfAj/8A9j2h14QVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:40</sys_created_on>
+        <sys_id>834027967d9303107f44ac69a48fb9c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:37:57</sys_updated_on>
+        <ui_id>c6aaab3c-c16e-4e82-983d-1235553ee228</ui_id>
+        <values>H4sIAAAAAAAA/91VTXPaMBD9K4zOxmNjcIBbJxlOTTKTZLikqUeW1qCp/FFLJlCG/96VJRsawrSd6SXlpn1vte+tV8vznghO5iQOIZjMwphFYRSNgmA0HYdpHKXhiEcUYEw8UtAckKlpKiFpDx7ZUNmY4DZRBUtyAC2KVaKp+vbLQSGVC1VJulu6jFsLD54czNZC8hoKMn9+8UhFayygoSbz/RvoT+VKmoJE6pPRe0G+3lXvxj6f5g7uLFDW3OgJPAJbDQUHFJJRqcAjOS041WW9I3NdNxiogfL7Qu56xloUGi8khrtV4geWnQaGlwE6Y2Cx/pi4btlwdkM1fcSbmW5qR2XrUjBQticcMtpIfX0as4T7SouysCmtTZddyiYv7mxLSH9B93Ew0igUAZXxaZQ7G9njunx96FQuRNG2xIGyZFT2J6p1LdJGGz17AhJyvCjJaVWZqajqciPaZNSS+yuJBz+T5SsWVWJV+JQZ4T62lfoLjN+04SWthXFxi9dg8sEjaqeuJVXq6AWbmHxvjBLrzHlIbBtMCqtFpT9hgQ04uQevewccgtnFwQrT4yC1o69O3kA79VpoCV+aIIj4fq+a1Fjyj8jh8BW1ohHoSVnMJhM+DYfxeAbDcZzBcHrFZ8NoxDgP2TgIgyv/ARiOH2bzBj8L1WclurihOMdMgDqjnWAt1fYCO33O7KHD4fz5/t9m/3IZ/X5mumW0ECC5emeIuk0EOXZZQ2KH6s02cuBg6UC3kcJ/tZHCOGh/H2gvWXMffi2d/ANdWFAvPwGogXD1qgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>due_date</element>
+        <help/>
+        <hint/>
+        <label>due_date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>0f4027967d9303107f44ac69a48fb97f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignee_name</element>
+        <help/>
+        <hint/>
+        <label>assignee_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>324027967d9303107f44ac69a48fb970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dependencies</element>
+        <help/>
+        <hint/>
+        <label>dependencies</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>434027967d9303107f44ac69a48fb983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 19:27:06</sys_created_on>
+        <sys_id>4e7a67567dd303107f44ac69a48fb988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_title</element>
+        <help/>
+        <hint/>
+        <label>task_title</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:39</sys_created_on>
+        <sys_id>b64027967d9303107f44ac69a48fb96c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_agent_task_record</internal_name>
+        <label_cache>[{"name":"subflow.description","label":"Input➛description","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f1a2de37-89b8-42db-9d2a-bb40f266b576"}},{"name":"f6c55d81-649e-46fe-87d9-32cdd1c40107.Record","label":"1 - Look Up Record➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f6c55d81-649e-46fe-87d9-32cdd1c40107.Record.sys_id","label":"1 - Look Up Record➛User Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"]}},{"name":"subflow.assignee_name","label":"Input➛assignee_name","reference":"","reference_display":"","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["assignee"],"cc766731-1f3b-4a17-b555-1f4682ceefb3":["conditions"],"f6c55d81-649e-46fe-87d9-32cdd1c40107":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c2e2f42f-eda2-426f-ab37-2ac2a2295ea7"}},{"name":"subflow.dependencies","label":"Input➛dependencies","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["dependencies"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ac5418df-943e-4613-9230-f38ef50db700"}},{"name":"subflow.due_date","label":"Input➛due_date","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["due_date"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a0a18ed7-36bf-4861-bf0c-7d69fa110731"}},{"name":"subflow.task_title","label":"Input➛task_title","type":"string","base_type":"string","usedInstances":{"c6aaab3c-c16e-4e82-983d-1235553ee228":["task_title"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"062479c5-d94c-4e00-9479-d1b4f75fb149"}}]</label_cache>
+        <master>true</master>
+        <name>Create Agent Task Record</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9250a7967d9303107f44ac69a48fb966</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:11</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9250a7967d9303107f44ac69a48fb966^sys_idNOT IN5650a7967d9303107f44ac69a48fb967"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9250a7967d9303107f44ac69a48fb966</id>
+        <name>Create Agent Task Record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>5650a7967d9303107f44ac69a48fb967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5650a7967d9303107f44ac69a48fb967"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9250a7967d9303107f44ac69a48fb966^sys_idNOT IN5250a7967d9303107f44ac69a48fb999,5250a7967d9303107f44ac69a48fb9a0,5650a7967d9303107f44ac69a48fb968,8b7aa7567dd303107f44ac69a48fb966,d250a7967d9303107f44ac69a48fb9a7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c2e2f42f-eda2-426f-ab37-2ac2a2295ea7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>assignee_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>assignee_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</model>
+        <model_id>9250a7967d9303107f44ac69a48fb966</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>5250a7967d9303107f44ac69a48fb999</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5250a7967d9303107f44ac69a48fb999"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a0a18ed7-36bf-4861-bf0c-7d69fa110731</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>due_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>due_date</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</model>
+        <model_id>9250a7967d9303107f44ac69a48fb966</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>5250a7967d9303107f44ac69a48fb9a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5250a7967d9303107f44ac69a48fb9a0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=062479c5-d94c-4e00-9479-d1b4f75fb149</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_title</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>task_title</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</model>
+        <model_id>9250a7967d9303107f44ac69a48fb966</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>5650a7967d9303107f44ac69a48fb968</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5650a7967d9303107f44ac69a48fb968"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f1a2de37-89b8-42db-9d2a-bb40f266b576</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</model>
+        <model_id>9250a7967d9303107f44ac69a48fb966</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 19:27:10</sys_created_on>
+        <sys_id>8b7aa7567dd303107f44ac69a48fb966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8b7aa7567dd303107f44ac69a48fb966"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ac5418df-943e-4613-9230-f38ef50db700</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dependencies</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>dependencies</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</model>
+        <model_id>9250a7967d9303107f44ac69a48fb966</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>d250a7967d9303107f44ac69a48fb9a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d250a7967d9303107f44ac69a48fb9a7"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9250a7967d9303107f44ac69a48fb966^sys_idNOT IN6650a7967d9303107f44ac69a48fb9b3,a250a7967d9303107f44ac69a48fb9b4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:54</sys_created_on>
+        <sys_id>6650a7967d9303107f44ac69a48fb9b3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <ui_id>f6c55d81-649e-46fe-87d9-32cdd1c40107</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcFkkNBJttgCbtpVsQlEjFxNKkSlJJHcP/fYeiJAu2YltYB0jQI2eG5JuZ90a0v699RvxLn8yCWTqbjadREAyHQTCZDBMcxvFwksRBjEd+zxd4SSHS4JhTWD5hntu1XmmUa6rARJjOOF59Kz1fnTVZME4UFf7l9x89P8MKzjHguVzvuE4FwnFMOYQ+lEh2gJlVVi9R4XO22+Y277NzSEUslKDn01+GCkIBQ4q5pj1/iQXBRqpVbVEUkzvBt4YFEwZO9G3wL81e4N5pYONSClkl1PnqJSoL5MzpNTb43qg8MbkqQ5OFZAnVrh6Epjjn5qppcwF3mWFSuC0ubbdb8nwpPrty+PUBVT/AAo1ChGY2UYu8TCO9X8jnLxXKORNFTUonlwnm9Qobo1icG4tn7VNOl3AQWuIsY+IRZUo+sWIzYFn2Hzks+imXz3CpZo+ijxMLvA91xf052K8L8zesmM3ibzimoEzKODAEuRZqmauilE8o4bkuHAoL7c7yNz1LwSuOtd5mDiVHP3OL29WhzBi5otktiWKZ+ROOeKJlcptepYXxQQrOtpRLpCDMotANQVjf7c1fn9Zrncc2+T5AgyypY+Nms6+UU7Z0lNHxHCoZXTWTaEusFNSe7bbtgFJQ4dkENQqCjyQpuPz9Kaq7RlwJjgglJAdJRrZ80lIZ5GrZUMq+EDrz/AQIFc/vLDO9ePUaqpLmKaOctH035tax890Y/J7fjXdJcgBEkOseE5yJ4hEAQN+K/eOD1IvDHZ4V9Go8m6wN62RfA9gz0nvprIQT4FRKuIe7vQeHpwViNe8LyuzO+spYCmB4NgEMB+cRwLpOsy5kS82rd5/tZhX/YuPxbjxQsLEh3LQJrNOdYdc7B5t9AQ87KbhJNue5foVzZ34gvqLI3luOgAVsLe9DTr/omZFHara3V1FEmmfM/23zl4xDVaOK9N7gsRke/L0TNx6bLEVL6BzL4E2saALk0AgrilKZC4LK1/CWSLaTKVPalMH7g+YLBf0IT4IwPbOgXhHt1dEdP8TH86hKeZN6VSLlbdqDRLwiEa9OpFvaXYbW6IyP03MPrTlmvOgG/NDJGu2kSkn1yuA60sgDjDhxqp0IKjwrqP8/9tok0Dr+jmD9EL+azz+aEorj0QBPomEYBkEYkCiYRlE4ncTpBEejdKtRhLRIYJrCySlQBY5HFTWqPof786cctt3mzAmgKgZeS/FPHgSDyHgWFbTXq1Adx13Ok1hKTrHYGSgPgPyPefFFqOk6fndD5UP8hZSzh91KO1Nrrd/q2ZCzr4L9zOmNpdiUBoNpSJKLaRRGF6OUTC5mBI8v8CweR0NCk1F6zpfAj/8A9j2h14QVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Agent Task Record">9250a7967d9303107f44ac69a48fb966</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:54</sys_created_on>
+        <sys_id>a250a7967d9303107f44ac69a48fb9b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <ui_id>c6aaab3c-c16e-4e82-983d-1235553ee228</ui_id>
+        <values>H4sIAAAAAAAA/91VTXPaMBD9K4zOxmNjcIBbJxlOTTKTZLikqUeW1qCp/FFLJlCG/96VJRsawrSd6SXlpn1vte+tV8vznghO5iQOIZjMwphFYRSNgmA0HYdpHKXhiEcUYEw8UtAckKlpKiFpDx7ZUNmY4DZRBUtyAC2KVaKp+vbLQSGVC1VJulu6jFsLD54czNZC8hoKMn9+8UhFayygoSbz/RvoT+VKmoJE6pPRe0G+3lXvxj6f5g7uLFDW3OgJPAJbDQUHFJJRqcAjOS041WW9I3NdNxiogfL7Qu56xloUGi8khrtV4geWnQaGlwE6Y2Cx/pi4btlwdkM1fcSbmW5qR2XrUjBQticcMtpIfX0as4T7SouysCmtTZddyiYv7mxLSH9B93Ew0igUAZXxaZQ7G9njunx96FQuRNG2xIGyZFT2J6p1LdJGGz17AhJyvCjJaVWZqajqciPaZNSS+yuJBz+T5SsWVWJV+JQZ4T62lfoLjN+04SWthXFxi9dg8sEjaqeuJVXq6AWbmHxvjBLrzHlIbBtMCqtFpT9hgQ04uQevewccgtnFwQrT4yC1o69O3kA79VpoCV+aIIj4fq+a1Fjyj8jh8BW1ohHoSVnMJhM+DYfxeAbDcZzBcHrFZ8NoxDgP2TgIgyv/ARiOH2bzBj8L1WclurihOMdMgDqjnWAt1fYCO33O7KHD4fz5/t9m/3IZ/X5mumW0ECC5emeIuk0EOXZZQ2KH6s02cuBg6UC3kcJ/tZHCOGh/H2gvWXMffi2d/ANdWFAvPwGogXD1qgcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9250a7967d9303107f44ac69a48fb966"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 19:27:10</sys_created_on>
+        <sys_id>4f7aa7567dd303107f44ac69a48fb96f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>due_date</element>
+        <help/>
+        <hint/>
+        <label>due_date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>5a50a7967d9303107f44ac69a48fb9a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_title</element>
+        <help/>
+        <hint/>
+        <label>task_title</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>d650a7967d9303107f44ac69a48fb996</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>assignee_name</element>
+        <help/>
+        <hint/>
+        <label>assignee_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>d650a7967d9303107f44ac69a48fb99d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dependencies</element>
+        <help/>
+        <hint/>
+        <label>dependencies</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:53</sys_created_on>
+        <sys_id>ea50a7967d9303107f44ac69a48fb9ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:42:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9250a7967d9303107f44ac69a48fb966"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9250a7967d9303107f44ac69a48fb966"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>848b5f9e7d5303107f44ac69a48fb9d1</sys_id>
+        <latest_snapshot>9250a7967d9303107f44ac69a48fb966</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=848b5f9e7d5303107f44ac69a48fb9d1"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=848b5f9e7d5303107f44ac69a48fb9d1^sys_idNOT IN2e50e7967d9303107f44ac69a48fb916"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"2e50e7967d9303107f44ac69a48fb916","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Create Agent Task Record">848b5f9e7d5303107f44ac69a48fb9d1</plan_id>
+        <snapshot>78fc635a7dd303107f44ac69a48fb911</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:42:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e50e7967d9303107f44ac69a48fb916</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 19:27:11</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

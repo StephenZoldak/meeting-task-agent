@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Meeting Intelligence Agent">de50520a051703107f44085f35f5038d</agent>
+        <description>Creates an actionable meeting task record in the custom agent tasks table. Use this tool when a task, owner, or deadline is identified in a meeting transcript to automatically populate the task title, assignee name, due date, and task dependencies.</description>
+        <display_output>true</display_output>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Meeting Task Tool</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <run_as/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-14 18:22:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aa02d60e051703107f44085f35f503e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meeting Task Tool</sys_name>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-14 18:22:16</sys_updated_on>
+        <tool display_value="Meeting Task Tool">22029e8a051703107f44085f35f503fe</tool>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</application>
+        <file_path/>
+        <instance_id>446f5d73470b43d86ff11873e16d43a7</instance_id>
+        <instance_name>nowlearning-nlinst04639977-7jtxq-0001</instance_name>
+        <name>sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Meeting Intelligence Agent">de50520a051703107f44085f35f5038d</agent><description>Creates an actionable meeting task record in the custom agent tasks table. Use this tool when a task, owner, or deadline is identified in a meeting transcript to automatically populate the task title, assignee name, due date, and task dependencies.</description><display_output>true</display_output><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Meeting Task Tool</name><output_transformation_strategy>none</output_transformation_strategy><run_as/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-14 18:22:16</sys_created_on><sys_domain>global</sys_domain><sys_id>aa02d60e051703107f44085f35f503e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Meeting Task Tool</sys_name><sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package><sys_policy/><sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-14 18:22:16</sys_updated_on><tool display_value="Meeting Task Tool">22029e8a051703107f44085f35f503fe</tool></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>972700784</payload_hash>
+        <record_name>Meeting Task Tool</record_name>
+        <reverted_from/>
+        <source>3698a1ce051303107f44085f35f5030a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-14 18:22:16</sys_created_on>
+        <sys_id>6602d60e051703107f44085f35f503e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0a127d3390000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-14 18:22:16</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>2a02d60eca1703103e40931701a5fde6</update_guid>
+        <update_guid_history>2a02d60eca1703103e40931701a5fde6:972700784</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Meeting Task Tool">a78323da7d9303107f44ac69a48fb9f2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 18:56:54</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>00864d83f8bc4dbb8001e0f0003ec979</sys_id>
+        <sys_metadata>aa02d60e051703107f44085f35f503e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Meeting Task Tool</sys_name>
+        <sys_package display_value="Meeting Task Agent" source="x_snc_meeting_task">d075a9ca051303107f44085f35f50355</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Meeting Task Agent">d075a9ca051303107f44085f35f50355</sys_scope>
+        <sys_scope_delete display_value="">36d5ff3967d6429ea22e96a9643dd0c1</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_aa02d60e051703107f44085f35f503e1">6602d60e051703107f44085f35f503e7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 18:56:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
